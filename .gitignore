@@ -1,0 +1,17 @@
+node_modules/
+package-lock.json
+dist/
+coverage/
+*.tgz
+*.zip
+*.tar
+*.gz
+*.tar.gz
+*.tgz
+*.tar.xz
+*.tar.bz2
+*.log
+
+*.tsbuildinfo
+/test-results
+.vscode/

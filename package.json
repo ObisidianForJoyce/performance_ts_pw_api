@@ -1,0 +1,33 @@
+{
+  "name": "performance-testing-framework",
+  "version": "1.0.0",
+  "description": "A performance testing framework using API testing, Playwright for end-to-end testing, and Artillery for performance testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "e2e": "playwright test",
+    "performance": "artillery run --output src/performance/report.json src/performance/artilleryTest.yml",
+    "performance:report": "npx playwright show-report src/performance/report.json"
+  },
+  "dependencies": {
+    "artillery-engine-playwright": "^1.20.0",
+    "axios": "^1.9.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.14.0",
+    "@types/jest": "^29.5.14",
+    "artillery": "^2.0.23",
+    "jest": "^27.0.6",
+    "typescript": "^4.4.3"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "playwright": {
+    "testDir": "src/e2e",
+    "timeout": 30000,
+    "use": {
+      "headless": true
+    }
+  }
+}

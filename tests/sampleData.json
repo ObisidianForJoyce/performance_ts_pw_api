@@ -1,0 +1,22 @@
+{
+  "sampleData": [
+    {
+      "id": 1,
+      "name": "Sample Item 1",
+      "description": "This is a sample item for testing purposes.",
+      "price": 10.99
+    },
+    {
+      "id": 2,
+      "name": "Sample Item 2",
+      "description": "This is another sample item for testing purposes.",
+      "price": 15.49
+    },
+    {
+      "id": 3,
+      "name": "Sample Item 3",
+      "description": "This is yet another sample item for testing purposes.",
+      "price": 7.99
+    }
+  ]
+}
